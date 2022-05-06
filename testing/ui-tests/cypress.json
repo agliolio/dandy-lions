@@ -1,0 +1,6 @@
+{
+  "pluginsFile": false,
+  "baseUrl": "https://localhost:7146",
+  "counterPage": "/counter",
+  "fetchData": "/fetchdata"
+}

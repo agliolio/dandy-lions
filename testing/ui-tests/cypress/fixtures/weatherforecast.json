@@ -1,0 +1,32 @@
+[
+    {
+        "date": "2022-05-05T15:02:53.7149852+10:00",
+        "temperatureC": 12,
+        "summary": "Balmy",
+        "temperatureF": 53
+    },
+    {
+        "date": "2022-05-06T15:02:53.7149919+10:00",
+        "temperatureC": 41,
+        "summary": "Freezing",
+        "temperatureF": 105
+    },
+    {
+        "date": "2022-05-07T15:02:53.7149922+10:00",
+        "temperatureC": 34,
+        "summary": "Hot",
+        "temperatureF": 93
+    },
+    {
+        "date": "2022-05-08T15:02:53.7149923+10:00",
+        "temperatureC": -7,
+        "summary": "Bracing",
+        "temperatureF": 20
+    },
+    {
+        "date": "2022-05-09T15:02:53.7149925+10:00",
+        "temperatureC": 0,
+        "summary": "Freezing",
+        "temperatureF": 32
+    }
+]

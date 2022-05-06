@@ -1,0 +1,230 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\moula\\moula-qa-eng-challenge\\component-tests\\test-moula.csproj": {}
+  },
+  "projects": {
+    "C:\\moula\\moula-qa-eng-challenge\\Client\\moula-qa-eng-challenge.Client.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\moula\\moula-qa-eng-challenge\\Client\\moula-qa-eng-challenge.Client.csproj",
+        "projectName": "moula-qa-eng-challenge.Client",
+        "projectPath": "C:\\moula\\moula-qa-eng-challenge\\Client\\moula-qa-eng-challenge.Client.csproj",
+        "packagesPath": "C:\\Users\\vs9\\.nuget\\packages\\",
+        "outputPath": "C:\\moula\\moula-qa-eng-challenge\\Client\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\vs9\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\moula\\moula-qa-eng-challenge\\Shared\\moula-qa-eng-challenge.Shared.csproj": {
+                "projectPath": "C:\\moula\\moula-qa-eng-challenge\\Shared\\moula-qa-eng-challenge.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Components.WebAssembly": {
+              "target": "Package",
+              "version": "[6.0.3, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly.DevServer": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.3, )"
+            },
+            "Microsoft.Net.Compilers.Toolset": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[4.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
+              "version": "[6.0.4, 6.0.4]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "browser-wasm": {
+          "#import": []
+        }
+      }
+    },
+    "C:\\moula\\moula-qa-eng-challenge\\component-tests\\test-moula.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\moula\\moula-qa-eng-challenge\\component-tests\\test-moula.csproj",
+        "projectName": "test-moula",
+        "projectPath": "C:\\moula\\moula-qa-eng-challenge\\component-tests\\test-moula.csproj",
+        "packagesPath": "C:\\Users\\vs9\\.nuget\\packages\\",
+        "outputPath": "C:\\moula\\moula-qa-eng-challenge\\component-tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\vs9\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\moula\\moula-qa-eng-challenge\\Client\\moula-qa-eng-challenge.Client.csproj": {
+                "projectPath": "C:\\moula\\moula-qa-eng-challenge\\Client\\moula-qa-eng-challenge.Client.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.11.0, )"
+            },
+            "RichardSzalay.MockHttp": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "bunit": {
+              "target": "Package",
+              "version": "[1.6.4, )"
+            },
+            "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\moula\\moula-qa-eng-challenge\\Shared\\moula-qa-eng-challenge.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\moula\\moula-qa-eng-challenge\\Shared\\moula-qa-eng-challenge.Shared.csproj",
+        "projectName": "moula-qa-eng-challenge.Shared",
+        "projectPath": "C:\\moula\\moula-qa-eng-challenge\\Shared\\moula-qa-eng-challenge.Shared.csproj",
+        "packagesPath": "C:\\Users\\vs9\\.nuget\\packages\\",
+        "outputPath": "C:\\moula\\moula-qa-eng-challenge\\Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\vs9\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

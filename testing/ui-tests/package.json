@@ -1,0 +1,30 @@
+{
+  "name": "cypress-ui-test-moula",
+  "version": "0.0.0-development",
+  "description": "Comprises UI tests for the Moula QA Test App",
+  "main": "index.js",
+  "files": [
+    "app",
+    "cypress"
+  ],
+  "scripts": {
+    "e2e:chrome": "cypress run --browser chrome",
+    "e2e:firefox": "cypress run --browser firefox",
+    "cy:run": "cypress run",
+    "cy:open": "cypress open"
+  },
+  "author": "Suchitra V",
+  "dependencies": {
+    "axe-core": "^4.4.1",
+    "cypress-axe": "^0.14.0",
+    "npm-run-all": "^4.1.2"
+  },
+  "devDependencies": {
+    "@cypress/eslint-plugin-dev": "5.0.0",
+    "cypress": "9.5.0",
+    "eslint": "7.0.0"
+  },
+  "engines": {
+    "node": ">=12"
+  }
+}

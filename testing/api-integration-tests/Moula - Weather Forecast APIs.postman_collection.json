@@ -1,0 +1,115 @@
+{
+	"info": {
+		"_postman_id": "1a58ff78-f4c7-473e-89bf-e9e1ce7dab9b",
+		"name": "Moula - Weather Forecast APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "WeatherForecast - 200",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Successful Response\", function() {\r",
+							"    pm.response.to.have.status(200);\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+							"    pm.expect(pm.response.json()).to.have.lengthOf(5);\r",
+							"    for(let i=0; i < 5; i++){\r",
+							"    pm.expect(pm.response.json()[i]).to.have.ownProperty(\"date\");\r",
+							"    pm.expect(pm.response.json()[i]).to.have.ownProperty(\"temperatureC\");\r",
+							"    pm.expect(pm.response.json()[i]).to.have.ownProperty(\"summary\");\r",
+							"    pm.expect(pm.response.json()[i]).to.have.ownProperty(\"temperatureF\");\r",
+							"    }\r",
+							"\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/WeatherForecast",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"WeatherForecast"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Invalid WeatherForecast endpoint - 200 with error body",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Error Page Response\", function() {\r",
+							"    pm.response.to.have.status(200);\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+							"    pm.expect(pm.response.text()).to.include(\"An unhandled error has occurred.\");\r",
+							"\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/WeatherForecast/potato",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"WeatherForecast",
+						"potato"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "WeatherForecast - 404",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Not Found Response\", function() {\r",
+							"    pm.response.to.have.status(404);\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+							"    pm.expect(pm.response.text()).to.be.empty;\r",
+							"\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/WeatherForecast",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"WeatherForecast"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

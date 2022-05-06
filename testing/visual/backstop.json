@@ -1,0 +1,93 @@
+{
+  "id": "backstop_default",
+  "viewports": [
+    {
+      "label": "desktop",
+      "width": 1200,
+      "height": 1024
+    },
+    {
+      "label": "iPhone 8 plus - landscape",
+      "width": 1920,
+      "height": 1080
+    }
+
+  ],
+  "scenarios": [
+    {
+      "label": "Home Page default view",
+      "cookiePath": "",
+      "url": "https://localhost:7146/",
+      "referenceUrl": "https://localhost:7146/",
+      "readyEvent": "",
+      "readySelector": "h1",
+      "delay": 1000,
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "hoverSelector": "",
+      "clickSelector": "",
+      "postInteractionWait": 0,
+      "selectorExpansion": true,
+      "selectors": [],
+      "expect": 0,
+      "misMatchThreshold" : 1.0,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "Counter Page default view",
+      "cookiePath": "",
+      "url": "https://localhost:7146/counter",
+      "referenceUrl": "https://localhost:7146/counter",
+      "readyEvent": "",
+      "readySelector": "h1",
+      "delay": 1000,
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "hoverSelector": "",
+      "clickSelector": "",
+      "postInteractionWait": 0,
+      "selectorExpansion": true,
+      "selectors": [],
+      "expect": 0,
+      "misMatchThreshold" : 1.0,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "Fetch Data page default view",
+      "cookiePath": "",
+      "url": "https://localhost:7146/fetchdata",
+      "referenceUrl": "https://localhost:7146/fetchdata",
+      "readyEvent": "",
+      "readySelector": "h1",
+      "delay": 1000,
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "hoverSelector": "",
+      "clickSelector": "",
+      "postInteractionWait": 0,
+      "selectorExpansion": true,
+      "selectors": [],
+      "expect": 0,
+      "misMatchThreshold" : 1.0,
+      "requireSameDimensions": true
+    }
+   	],
+  "paths": {
+    "bitmaps_reference": "backstop_data/bitmaps_reference",
+    "bitmaps_test": "backstop_data/bitmaps_test",
+    "engine_scripts": "backstop_data/engine_scripts",
+    "html_report": "backstop_data/html_report",
+    "ci_report": "backstop_data/ci_report"
+  },
+  "report": ["browser"],
+  "engine": "puppeteer",
+  "engineOptions": {
+    "args": ["--no-sandbox"]
+  },
+  "scenarioLogsInReports": true,
+  "asyncCaptureLimit": 2,
+  "asyncCompareLimit": 2,
+  "debug": false,
+  "debugWindow": false
+}
+
